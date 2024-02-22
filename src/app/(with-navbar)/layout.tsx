@@ -1,7 +1,7 @@
 import { Footer } from "@/Components/Footer/Footer";
 import Navbar from "@/Components/Navbar/Navbar";
 
-const WithNavbar = ({ children }) => {
+const WithNavbar = ({ children }: { children: React.ReactNode })=> {
   return (
     <div>
         <Navbar/>

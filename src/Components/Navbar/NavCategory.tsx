@@ -1,53 +1,38 @@
 import Link from 'next/link';
-import React, { useState,  } from 'react';
+import React, { useState } from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
-
 function NavCategory() {
-  const [isDropdownOpen, setDropdownOpen] = useState(true);
-
-
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLinkClick = () => {
     setDropdownOpen(false);
   };
-  
 
   return (
-
-      <div className="dropdown dropdown-end">
-        <div
-         
-          tabIndex={0}
-          role="button"
-          className="flex flex-row justify-between gap-2 text-lg "
-        >
-          Pages <IoMdArrowDropdown className="text-lg" />
-        </div>
+    <div className="dropdown dropdown-end">
+      <div
+        tabIndex={0}
+        role="button"
+        className="flex flex-row justify-between gap-2 text-lg"
+        onClick={() => setDropdownOpen(!isDropdownOpen)}
+      >
+        Pages <IoMdArrowDropdown className="text-lg" />
+      </div>
+      {isDropdownOpen && (
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  w-52"
-          open={isDropdownOpen}
-        
+          className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52"
         >
-          <li
-            className="px-4 py-2 text-sm hover:text-cyan-600"
-            role="menuitem"
-            tabIndex="-1"
-            id="menu-item-1"
-          >
-            <Link
-              className="hover:text-cyan-800 font-medium"
-              href="/shop"
-              onClick={handleLinkClick}
-            >
+          <li className="px-4 py-2 text-sm hover:text-cyan-600" role="menuitem"  id="menu-item-1">
+            <Link className="hover:text-cyan-800 font-medium" href="/shop" onClick={handleLinkClick}>
               Shop
             </Link>
           </li>
           <li
             className="px-4 py-2 text-sm"
             role="menuitem"
-            tabIndex="-1"
+          
             id="menu-item-1"
           >
             <Link
@@ -61,7 +46,7 @@ function NavCategory() {
           <li
             className="px-4 py-2 text-sm hover:text-cyan-600"
             role="menuitem"
-            tabIndex="-1"
+          
             id="menu-item-2"
           >
             <Link
@@ -75,7 +60,7 @@ function NavCategory() {
           <li
             className="px-4 py-2 text-sm hover:text-cyan-600"
             role="menuitem"
-            tabIndex="-1"
+          
             id="menu-item-3"
           >
             <Link
@@ -86,7 +71,7 @@ function NavCategory() {
               Check-Out
             </Link>
           </li>
-        </ul>
+        </ul> )}
       </div>
 
   );

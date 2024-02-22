@@ -12,28 +12,28 @@ function NavCart() {
 
 
   const fetchData = async () => {
-    try {
-      const res = await getCartProducts();
-      if (res.data && res.data.cartItem) {
-        setProducts(res.data.cartItem); // Assuming cartItem is an array of cart products
-      }
-    } catch (error) {
-      console.error("Error fetching cart products:", error);
-    }
+    // try {
+    //   const res = await getCartProducts();
+    //   if (res.data && res.data.cartItem) {
+    //     setProducts(res.data.cartItem); // Assuming cartItem is an array of cart products
+    //   }
+    // } catch (error) {
+    //   console.error("Error fetching cart products:", error);
+    // }
   }
 
   const fetchWishlist = async () => {
-    try {
-      const res = await getWishListProducts();
-      setWishlists(res.data.
-        wishlistItem.wishlist
-        )
-      // if (res.data && res.data.cartItem) {
-      //   setProducts(res.data.cartItem); // Assuming cartItem is an array of cart products
-      // }
-    } catch (error) {
-      console.error("Error fetching wishlist products:", error);
-    }
+    // try {
+    //   const res = await getWishListProducts();
+    //   setWishlists(res.data.
+    //     wishlistItem.wishlist
+    //     )
+    //   // if (res.data && res.data.cartItem) {
+    //   //   setProducts(res.data.cartItem); // Assuming cartItem is an array of cart products
+    //   // }
+    // } catch (error) {
+    //   console.error("Error fetching wishlist products:", error);
+    // }
   };
 
   useEffect(() => {

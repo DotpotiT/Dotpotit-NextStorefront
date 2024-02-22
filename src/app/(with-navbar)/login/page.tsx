@@ -1,6 +1,6 @@
 "use client"
 import axios from "axios";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import Swal from "sweetalert2";
@@ -21,75 +21,72 @@ const Login = () => {
   // const dispatch = useDispatch();
   // const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    console.log(e.target.value);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
 
-  console.log("details", details);
-
-  const handleLogin = async (event) => {
+  const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    try {
-      const res = await userLogin({
-        email: details.email,
-        password: details.password,
-      })
+    // try {
+    //   const res = await userLogin({
+    //     email: details.email,
+    //     password: details.password,
+    //   })
 
-      console.log("login ", res);
+    //   console.log("login ", res);
 
-      if (res.data) {
-        //saving it to local storage
-        window.localStorage.setItem("auth", JSON.stringify(res.data.user));
+    //   if (res.data) {
+    //     //saving it to local storage
+    //     window.localStorage.setItem("auth", JSON.stringify(res.data.user));
 
-        // saving it to redux
-        // dispatch({
-        //   type: "LOGGED_IN_USER",
-        //   payload: res.data.user,
-        // });
+    //     // saving it to redux
+    //     // dispatch({
+    //     //   type: "LOGGED_IN_USER",
+    //     //   payload: res.data.user,
+    //     // });
 
-        if (res.status === 200) {
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "Login successful",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        }
+    //     if (res.status === 200) {
+    //       Swal.fire({
+    //         position: "top-end",
+    //         icon: "success",
+    //         title: "Login successful",
+    //         showConfirmButton: false,
+    //         timer: 1500,
+    //       });
+    //     }
 
-        // navigate("/");
-      }
-    } catch (error) {
-      console.log(
-        error.response.data.message ==
-          "Email is not varified, please verify email"
-      );
-      if (
-        error.response.data.message ==
-        "Email is not varified, please verify email"
-      ) {
-        console.log(
-          "abcd",
-          `<a href="/otp/${details.email}">Verify your Email</a>`
-        );
+    //     // navigate("/");
+    //   }
+    // } catch (error) {
+    //   console.log(
+    //     error.response.data.message ==
+    //       "Email is not varified, please verify email"
+    //   );
+    //   if (
+    //     error.response.data.message ==
+    //     "Email is not varified, please verify email"
+    //   ) {
+    //     console.log(
+    //       "abcd",
+    //       `<a href="/otp/${details.email}">Verify your Email</a>`
+    //     );
 
-        Swal.fire({
-          title: "Log in Failed",
-          text: error.response.data.message,
-          icon: "error",
-          footer: `<a href="/otp/${details.email}">Verify your Email</a>`,
-        });
-      } else {
-        Swal.fire({
-          title: "Log in Failed",
-          text: error.response.data.message,
-          icon: "error",
-        });
-      }
+    //     Swal.fire({
+    //       title: "Log in Failed",
+    //       text: error.response.data.message,
+    //       icon: "error",
+    //       footer: `<a href="/otp/${details.email}">Verify your Email</a>`,
+    //     });
+    //   } else {
+    //     Swal.fire({
+    //       title: "Log in Failed",
+    //       text: error.response.data.message,
+    //       icon: "error",
+    //     });
+    //   }
 
-      console.log("error", error);
-    }
+    //   console.log("error", error);
+    // }
   };
 
   return (
@@ -167,7 +164,7 @@ const Login = () => {
                   </div>
 
                   <button
-                    onClick={handleLogin}
+                    // onClick={handleLogin}
                     className="w-full px-4 py-4 mt-6 font-semibold text-white  bg-blue-700 rounded-xl  dark:text-white hover:text-white hover:bg-blue-200 dark:hover:bg-yellow-600 dark:hover:text-white"
                     type="submit"
                   >
