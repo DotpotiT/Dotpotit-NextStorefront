@@ -3,6 +3,7 @@ import FeatureProducts from "@/Components/FeatureProducts/FeatureProducts";
 import FlashSale from "@/Components/FlashSale/FlashSale";
 import FreeShipping from "@/Components/FreeShipping/FreeShipping";
 import NewArrivals from "@/Components/NewArrivals/NewArrivals";
+import PopularProducts from "@/Components/PopularProducts/PopularProducts";
 import Testimonials from "@/Components/Testimonials/Testimonials";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   <NewArrivals/>
   <FlashSale/>
   <FeatureProducts/>
+  <PopularProducts/>
   <FreeShipping/>
   <Testimonials/>
 
