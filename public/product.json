@@ -1,0 +1,174 @@
+[
+    {
+      "id": 1,
+      "label": "ALL",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 3",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-1_ucqfqi.jpg",
+          "price": "৳39.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 2,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-3_ge8nam.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 3,
+          "name": "Product 6",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
+          "price": "৳69.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 4,
+          "name": "Product 2",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
+          "price": "৳29.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 5,
+          "name": "Product 5",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-5_cl96ka.jpg",
+          "price": "৳59.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 6,
+          "name": "Product 4",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-6_oo3hya.jpg",
+          "price": "৳49.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "WOMAN",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 3",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-1_ucqfqi.jpg",
+          "price": "৳39.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 2,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-3_ge8nam.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 3,
+          "name": "Product 6",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
+          "price": "৳69.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 4,
+          "name": "Product 2",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
+          "price": "৳29.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        },
+        {
+          "id": 5,
+          "name": "Product 5",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-5_cl96ka.jpg",
+          "price": "৳59.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "MAN",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-6_oo3hya.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "ACCESSORIES",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "SHOES",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "KIDS",
+      "products": [
+        {
+          "id": 1,
+          "name": "Product 1",
+          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
+          "price": "৳19.99",
+          "stock": 10,
+          "ratings": 4.5,
+          "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
+        }
+      ]
+    }
+  ]
+  
