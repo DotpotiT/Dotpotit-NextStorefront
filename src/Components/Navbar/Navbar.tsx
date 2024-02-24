@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar flex justify-between items-center gap-1 md:gap-1 lg:gap-8 fixed z-40 bg-info px-2 lg:px-8 xl:px-[100px] 2xl:px-[250px] py-3">
+      <div className="navbar flex font-serif justify-between items-center gap-1 md:gap-1 lg:gap-8 fixed z-40 bg-info px-2 lg:px-8 xl:px-[100px] 2xl:px-[250px] py-3">
         <div className="navbar-start lg:flex hidden lg:justify-between gap-8">
           <Image
             src="https://res.cloudinary.com/dzqxgr4lr/image/upload/v1707059272/logop-removebg-preview_j1rwwf.png"

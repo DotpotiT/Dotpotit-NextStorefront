@@ -6,7 +6,7 @@ interface AllProductCardProps {
   
   function AllProductCard({ name }: AllProductCardProps) {
   return (
-    <div className="card font-serif bg-base-100 shadow-xl overflow-hidden">
+    <div className="card  font-serif bg-base-100 shadow-xl overflow-hidden">
       <figure>
       
         <Image
@@ -17,14 +17,14 @@ interface AllProductCardProps {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
+        <h3 className="card-title text-sm md:text-md lg:text-lg">
          {name}
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
-        <p className='text-sm '>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="badge badge-secondary hidden lg:block">NEW</div>
+        </h3>
+        <p className='text-xs md:text-sm lg:text-lg '>$ 234 </p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div> 
-          <div className="badge badge-outline">Products</div>
+          <div className="badge badge-outline text-md">Fashion</div> 
+          <div className="badge badge-outline text-md">Products</div>
         </div>
       </div>
     </div>

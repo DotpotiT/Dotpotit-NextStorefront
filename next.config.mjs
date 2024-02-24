@@ -3,8 +3,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      // Use remotePatterns instead of domains
-      domains: ['res.cloudinary.com'],
+    
+      domains: ['res.cloudinary.com','images.unsplash.com','source.unsplash.com','images.pexels.com'],
     },
   };
   

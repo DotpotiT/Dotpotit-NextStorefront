@@ -48,15 +48,50 @@ function Banner() {
   };
 
   return (
-    <div className="min-h-[75vh] relative">
+    <div className=" font-serif">
       {/* <Slider {...settings}> */}
         {/* {banner.map((slide, index) => ( */}
           {/* <div key={index}> */}
-            <div className="text-start  bg-blue-500/60 p-3 lg:p-8 lg:left-48 flex flex-col justify-between gap-2 min-w-[400px] lg:gap-5 absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2" data-aos="fade-right">
-              <p className="font-bold text-lg">Only today we offer free shopping</p>
-              <button className="btn btn-outline  btn-info w-[40%] lg:w-[50%]">Checkout</button>
-            </div>
-            <Image src='https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706618313/shopping-discounts-concept-young-stylish-modern-girl-posing-with-credit-card-looking-happy-s_sm8boh.jpg' alt="banner" width={1920} height={1080} layout="responsive" />
+          <section
+  className="relative bg-[url(https://images.pexels.com/photos/2861656/pexels-photo-2861656.jpeg)] bg-cover bg-center bg-no-repeat"
+>
+  <div
+    className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+  ></div>
+
+  <div
+    className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div className="max-w-xl text-start  ">
+      <h1 className="text-3xl text-gray-300  font-extrabold sm:text-5xl">
+        Let us find your
+
+        <strong className="block font-extrabold text-rose-700"> Forever Products. </strong>
+      </h1>
+
+      <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
+        numquam ea!
+      </p>
+
+      <div className="mt-8 flex flex-wrap gap-4 text-center">
+        <a
+          href="#"
+          className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+        >
+          Get Started
+        </a>
+
+        <a
+          href="#"
+          className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
           {/* </div> */}
         {/* ))} */}
       {/* </Slider> */}
@@ -65,3 +100,5 @@ function Banner() {
 }
 
 export default Banner;
+
+

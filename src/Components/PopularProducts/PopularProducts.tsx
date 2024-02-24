@@ -16,9 +16,9 @@ const PopularProducts: React.FC = () => {
     try {
       // Simulating API call to fetch products
       const dummyProducts = [
-        { id: 1, name: "Product 1" },
-        { id: 2, name: "Product 2" },
-        { id: 3, name: "Product 3" },
+        { id: 1, name: "Product" },
+        { id: 2, name: "Product" },
+        { id: 3, name: "Product" },
       ];
       setProducts(dummyProducts);
     } catch (error) {
@@ -86,7 +86,7 @@ const PopularProducts: React.FC = () => {
         <Slider {...settings}>
           {products.map((product) => (
             <div key={product.id} className="slick-slide">
-              <div style={{ padding: "0 15px" }}>
+              <div  style={{ padding: "0 15px" }}>
                 <AllProductCard name={product.name} />
               </div>
             </div>

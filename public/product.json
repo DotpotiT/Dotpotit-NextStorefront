@@ -6,8 +6,8 @@
         {
           "id": 1,
           "name": "Product 3",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-1_ucqfqi.jpg",
-          "price": "৳39.99",
+          "image": "https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "39.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -15,8 +15,8 @@
         {
           "id": 2,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-3_ge8nam.jpg",
-          "price": "৳19.99",
+          "image": "https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -24,8 +24,8 @@
         {
           "id": 3,
           "name": "Product 6",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
-          "price": "৳69.99",
+          "image": "https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "69.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -33,8 +33,8 @@
         {
           "id": 4,
           "name": "Product 2",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
-          "price": "৳29.99",
+          "image": "https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "29.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -42,8 +42,8 @@
         {
           "id": 5,
           "name": "Product 5",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-5_cl96ka.jpg",
-          "price": "৳59.99",
+          "image": "https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "59.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -51,8 +51,8 @@
         {
           "id": 6,
           "name": "Product 4",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-6_oo3hya.jpg",
-          "price": "৳49.99",
+          "image": "https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "49.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -66,8 +66,8 @@
         {
           "id": 1,
           "name": "Product 3",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-1_ucqfqi.jpg",
-          "price": "৳39.99",
+          "image": "https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "39.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -75,8 +75,8 @@
         {
           "id": 2,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-3_ge8nam.jpg",
-          "price": "৳19.99",
+          "image": "https://source.unsplash.com/bYuI23mnmDQ",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -84,8 +84,8 @@
         {
           "id": 3,
           "name": "Product 6",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
-          "price": "৳69.99",
+          "image": "https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "69.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -93,8 +93,8 @@
         {
           "id": 4,
           "name": "Product 2",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
-          "price": "৳29.99",
+          "image": "https://source.unsplash.com/Nllx4R-2c3o",
+          "price": "29.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -102,8 +102,8 @@
         {
           "id": 5,
           "name": "Product 5",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-5_cl96ka.jpg",
-          "price": "৳59.99",
+          "image": "https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+          "price": "59.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -117,8 +117,8 @@
         {
           "id": 1,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-6_oo3hya.jpg",
-          "price": "৳19.99",
+          "image": "https://source.unsplash.com/Ebwp2-6BG8E",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -132,8 +132,8 @@
         {
           "id": 1,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
-          "price": "৳19.99",
+          "image": "https://source.unsplash.com/Nllx4R-2c3o",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -147,8 +147,8 @@
         {
           "id": 1,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
-          "price": "৳19.99",
+          "image": "https://source.unsplash.com/Nllx4R-2c3o",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
@@ -162,8 +162,8 @@
         {
           "id": 1,
           "name": "Product 1",
-          "image": "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706104266/cutegirl_jow5dj.jpg",
-          "price": "৳19.99",
+          "image": "https://source.unsplash.com/Nllx4R-2c3o",
+          "price": "19.99",
           "stock": 10,
           "ratings": 4.5,
           "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante magna, non mattis lacus gravida quis. Duis non velit id purus mattis cursus."
