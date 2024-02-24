@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+
 import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
 

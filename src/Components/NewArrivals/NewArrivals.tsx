@@ -1,7 +1,21 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import NewArrivalsCard from '../NewArrivalsCard/NewArrivalsCard';
-import { fetchProducts } from '../../Actions/products'; // Import fetchProducts function
+import { fetchProducts } from '../../Actions/products'; 
+
+// Product.ts
+interface Product {
+  id: string; // Change the type of 'id' to string if necessary
+  name: string;
+  price: number;
+  image: string;
+  // Add other properties as needed
+}
+
+
+
+
+
 
 interface Tab {
   label: string;
