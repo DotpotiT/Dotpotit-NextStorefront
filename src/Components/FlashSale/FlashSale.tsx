@@ -1,38 +1,99 @@
-import React from 'react';
-import dynamic from 'next/dynamic';
-import { SwiperProps } from 'swiper/react';
+'use client'
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+import Link from "next/link";
+import AllProductCard from "../AllProductCard/AllProductCard";
 
-// Dynamically import Swiper component
-// const Swiper = dynamic<SwiperProps>(() => import('swiper/react'), { ssr: false });
-
-function FlashSale() {
-//   const swiperOptions = {
-//     slidesPerView: 5,
-//     spaceBetween: 5,
-//     autoplay: { delay: 3000 },
-//     breakpoints: {
-//       320: { slidesPerView: 2, spaceBetween: 10 },
-//       768: { slidesPerView: 2, spaceBetween: 10 },
-//       1024: { slidesPerView: 5, spaceBetween: 10 },
-//       1928: { slidesPerView: 5, spaceBetween: 10 },
-//     },
-//     rewind: true,
-   
-//     className: "mySwiper"
-//   };
-
-  return (
-    <div className="p-4 w-full lg:max-w-7xl mx-auto py-8 ">
-      <div className="flex flex-row justify-between gap-20 mb-4">
-        <div className='flex justify-between gap-6 items-center'>
-          <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">Flash Sale!</h2>
+const FlashSale: React.FC = () => {
+    const [showAll, setShowAll] = useState<boolean>(false);
+    const [products, setProducts] = useState<any[]>([]);
+  
+    useEffect(() => {
+      getProduct();
+    }, []);
+  
+    const getProduct = async () => {
+      try {
+        // Simulating API call to fetch products
+        const dummyProducts = [
+          { id: 1, name: "Product 1" },
+          { id: 2, name: "Product 2" },
+          { id: 3, name: "Product 3" },
+        ];
+        setProducts(dummyProducts);
+      } catch (error) {
+        console.error("Error fetching products: ", error);
+      }
+    };
+  
+    const toggleShowMore = () => {
+      setShowAll(!showAll);
+    };
+  
+    const settings = {
+      className: "center",
+      infinite: true,
+      centerPadding: "30px",
+      slidesToShow: 5,
+      swipeToSlide: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          },
+        },
+      ],
+    };
+  
+    return (
+      <div className="w-full lg:max-w-7xl mx-auto mb-8 px-2">
+        <div className="flex flex-row justify-between gap-20 mb-4">
+          <h2 className="text-md md:text-xl lg:text-2xl font-bold mb-2">
+           Flash Sale
+          </h2>
+          <div>
+            {products.length > 3 && (
+              <Link href="/flashSalePage">
+                <a className="mt-4 bg-[#009DE4] text-white px-2 text-sm lg:text-lg py-1 lg:py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800" onClick={toggleShowMore}>
+                  {/* {showAll ? <Shop/> : 'See More'} */}
+                </a>
+              </Link>
+            )}
+          </div>
+        </div>
+  
+        <div>
+          <Slider {...settings}>
+            {products.map((product) => (
+              <div key={product.id} className="slick-slide">
+                <div style={{ padding: "0 15px" }}>
+                  <AllProductCard name={product.name} />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
-      {/* <Swiper {...swiperOptions}> */}
-        {/* Your Swiper slides */}
-      {/* </Swiper> */}
-    </div>
-  );
-}
-
+    );
+  };
 export default FlashSale;
