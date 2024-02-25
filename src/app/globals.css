@@ -2,5 +2,160 @@
 @tailwind components;
 @tailwind utilities;
 
+.cart-page-heading {
+  margin-bottom: 50px;
+}
+
+.cart-page-heading h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.cart-page-heading p {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.coupon-code-area form {
+  position: relative;
+  z-index: 1;
+}
+
+.coupon-code-area form > button {
+  width: 120px;
+  height: 52px;
+  border: none;
+  text-transform: uppercase;
+  padding: 0 30px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-weight: 700;
+  right: 0;
+}
+
+.shipping-method-area .custom-control-label span {
+  font-size: 14px;
+}
+
+.cart-total-chart {
+  padding: 30px;
+}
+
+.cart-total-chart li {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
 
+/* -----------------------
+  :: 19.0 Checkout Area CSS
+  ----------------------- */
+
+.checkout_details_area div label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.checkout_details_area div label span {
+  color: #ff084e;
+}
+
+.checkout_details_area div .form-control,
+.checkout_details_area div .custom-select {
+  height: 52px;
+  border: none;
+  background-color: #f0f9ff;
+  border-radius: 0;
+}
+
+.order-details-confirmation {
+  width: 100%;
+  border: 2px solid #ebebeb;
+  padding: 40px;
+}
+
+.order-details-confirmation .order-details-form li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 30px 0;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.order-details-confirmation .card-header h6 a {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.order-details-confirmation .card-header h6 a i {
+  color: #9f9f9f;
+}
+
+.order-details-confirmation .card {
+  border: none;
+}
+
+.order-details-confirmation .card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.order-details-confirmation .card-body p {
+  font-size: 12px;
+  line-height: 2;
+  color: #9f9f9f;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .catagories-side-menu {
+    width: 260px;
+  }
+  #wrapper.karl-side-menu-open {
+    left: 260px;
+  }
+  .top_logo a img {
+    max-width: 80px;
+  }
+  .cart > a {
+    font-size: 12px;
+  }
+
+  .cart_area .update-checkout a:first-child {
+    margin-bottom: 10px;
+  }
+  .order-details-confirmation {
+    margin-top: 100px;
+    padding: 20px;
+  }
+}
