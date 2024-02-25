@@ -31,13 +31,12 @@ function CheckOut(props: any) {
   });
 
   const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
-    const { id, value, type, checked } = e.target;
-
+    const { id, value, type } = e.target;
+  
     if (type === "checkbox") {
+      const checked = (e.target as HTMLInputElement).checked;
       setFormData((prevData) => ({
         ...prevData,
         [id]: checked,
@@ -49,6 +48,7 @@ function CheckOut(props: any) {
       }));
     }
   };
+  
 
   const handlePaymentOptionChange = (option: string) => {
     setSelectedPaymentOption(option);
