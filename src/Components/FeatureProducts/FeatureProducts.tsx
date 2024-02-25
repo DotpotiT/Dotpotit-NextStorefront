@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
-import AllProductCard from "../AllProductCard/AllProductCard";
+import AllProductCard from "../AllProductCard/AllProductCard"; // Importing the AllProductCard component
 
 const FeatureProducts: React.FC = () => {
   const [showAll, setShowAll] = useState<boolean>(false);
@@ -87,7 +87,14 @@ const FeatureProducts: React.FC = () => {
           {products.map((product) => (
             <div key={product.id} className="slick-slide">
               <div style={{ padding: "0 15px" }}>
-                <AllProductCard name={product.name} />
+              <AllProductCard
+  key={product.id}
+  id={product.id}
+  discount={0} // Placeholder value
+  price={0} // Placeholder value
+  name={product.name}
+  image="" // Placeholder value
+/>
               </div>
             </div>
           ))}

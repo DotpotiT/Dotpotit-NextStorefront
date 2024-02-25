@@ -1,10 +1,15 @@
 import React from 'react';
 import Image from 'next/image'; // Import Image component from Next.js
 interface AllProductCardProps {
-    name: string; // Assuming name is a string
-  }
+  id: string;
+  discount: number;
+  price: number;
+  name: string;
+  image: string;
+}
+
   
-  function AllProductCard({ name }: AllProductCardProps) {
+const AllProductCard: React.FC<AllProductCardProps> = ({ id, discount, price, name, image }) => {
   return (
     <div className="card  font-serif bg-base-100 shadow-xl overflow-hidden">
       <figure>
