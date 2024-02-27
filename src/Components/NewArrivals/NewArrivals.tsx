@@ -13,10 +13,6 @@ interface Product {
 }
 
 
-
-
-
-
 interface Tab {
   label: string;
 }
@@ -69,7 +65,7 @@ const NewArrivals: React.FC = () => {
   };
 
   return (
-    <section className=" mt-16">
+    <section className=" mt-16 mb-8">
       <div className="container mx-auto">
         <div className=" text-center">
           <h2 className=' text-4xl mb-6 font-bold'>ℕ𝕖𝕨 𝔸𝕣𝕣𝕚𝕧𝕒𝕝𝕤</h2>
@@ -91,7 +87,7 @@ const NewArrivals: React.FC = () => {
           ) : error ? (
             <p>{error}</p>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-3 w-full lg:max-w-7xl mx-auto justify-center items-center">
               {products[activeTab]?.products?.map((product) => (
                 <NewArrivalsCard key={product.id} product={product} />
               ))}

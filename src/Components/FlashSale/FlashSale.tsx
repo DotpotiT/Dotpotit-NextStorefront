@@ -16,9 +16,9 @@ const FlashSale: React.FC = () => {
       try {
         // Simulating API call to fetch products
         const dummyProducts = [
-          { id: 1, name: "Product 1" },
-          { id: 2, name: "Product 2" },
-          { id: 3, name: "Product 3" },
+          { id: 1, name: "Product" },
+          { id: 2, name: "Product" },
+          { id: 3, name: "Product" },
         ];
         setProducts(dummyProducts);
       } catch (error) {
@@ -66,7 +66,7 @@ const FlashSale: React.FC = () => {
     };
   
     return (
-      <div className="w-full lg:max-w-7xl mx-auto mb-8 px-2">
+      <div className="w-full lg:max-w-7xl mx-auto mb-10 px-2">
         <div className="flex flex-row justify-between gap-20 mb-4">
           <h2 className="text-md md:text-xl lg:text-2xl font-bold mb-2">
            Flash Sale
@@ -87,7 +87,14 @@ const FlashSale: React.FC = () => {
             {products.map((product) => (
               <div key={product.id} className="slick-slide">
                 <div style={{ padding: "0 15px" }}>
-                  <AllProductCard name={product.name} />
+                <AllProductCard
+  key={product.id}
+  id={product.id}
+  discount={0} // Placeholder value
+  price={0} // Placeholder value
+  name={product.name}
+  image="" // Placeholder value
+/>
                 </div>
               </div>
             ))}

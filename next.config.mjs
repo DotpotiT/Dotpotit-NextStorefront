@@ -2,11 +2,15 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-      // Use remotePatterns instead of domains
-      domains: ['res.cloudinary.com'],
-    },
-  };
-  
-  export default nextConfig;
-  
+  images: {
+    domains: [
+      'res.cloudinary.com',
+      'images.unsplash.com',
+      'source.unsplash.com',
+      'images.pexels.com',
+      // Add more hostnames here if needed
+    ],
+  },
+};
+
+export default nextConfig;
