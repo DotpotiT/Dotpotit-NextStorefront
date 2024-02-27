@@ -4,9 +4,16 @@ import React, { useState } from "react";
 interface FilterProps {}
 
 const Filter: React.FC<FilterProps> = () => {
+  // State variables for checkbox values
   const [activeCategory, setActiveCategory] = useState<boolean>(false);
   const [ChildrenCategory, setChildrenCategory] = useState<boolean>(false);
   const [manCategory, setManCategory] = useState<boolean>(false);
+
+  // Function to handle checkbox state
+  const handleCheckbox = (stateSetter: React.Dispatch<React.SetStateAction<boolean>>) => {
+    stateSetter(prevState => !prevState);
+  };
+
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const [minPrice, setMinPrice] = useState<string>('');
 
@@ -19,9 +26,6 @@ const Filter: React.FC<FilterProps> = () => {
     setManCategory((prev) => !prev);
   };
 
-  const handleCheckbox = () => {
-    setActiveCategory((prev) => !prev);
-  };
   
   const handleChildrenCheckbox = () => {
     setChildrenCategory((prev) => !prev);
@@ -33,23 +37,24 @@ const Filter: React.FC<FilterProps> = () => {
     setMinPrice(p);
   };
 
-  return (
-    <div className=" lg:pt-16 w-[35vh]  lg:w-[35vh]    px-2 lg:px-8 py-5">
-      <div className="flex flex-col">
-        <h6 className="text-md lg:text-lg mb-6">Catagories</h6>
-
-        <ul className="flex flex-col">
-          {/* Category 1 */}
-          <div className="flex flex-col justify-start">
-            <div className="flex flex-row gap-2 justify-start items-center w-full lg:w-[25vh]">
-              <input
-                type="checkbox"
-                name=""
-                onClick={handleCheckbox}
-                checked={activeCategory}
-              />
-              Woman wear
-            </div>
+ 
+  
+    return (
+      <div className=" lg:pt-16 w-[35vh]  lg:w-[35vh]    px-2 lg:px-8 py-5">
+        <div className="flex flex-col">
+          <h6 className="text-md lg:text-lg mb-6">Categories</h6>
+  
+          <ul className="flex flex-col">
+            {/* Category 1 */}
+            <div className="flex flex-col justify-start">
+              <div className="flex flex-row gap-2 justify-start items-center w-full lg:w-[25vh]">
+                <input
+                  type="checkbox"
+                  onClick={() => handleCheckbox(setActiveCategory)}
+                  defaultChecked={activeCategory} // Use defaultChecked instead of checked
+                />
+                Woman wear
+              </div>
             {activeCategory === true && (
               <ul className="ml-5">
                 <div>
@@ -83,7 +88,7 @@ const Filter: React.FC<FilterProps> = () => {
                 type="checkbox"
                 name=""
                 onClick={handleManCheckbox}
-                checked={manCategory}
+        
               />
               Man wear
             </div>
@@ -120,7 +125,7 @@ const Filter: React.FC<FilterProps> = () => {
                 type="checkbox"
                 name=""
                 onClick={handleChildrenCheckbox}
-                checked={ChildrenCategory}
+               
               />
               Children wear
             </div>
