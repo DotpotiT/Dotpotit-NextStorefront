@@ -62,9 +62,9 @@ export default function Cart() {
     ],
   };
 
-  useEffect(() => {
-    setProducts(data.cartItem);
-  });
+  // useEffect(() => {
+  //   setProducts(data.cartItem);
+  // });
 
   const handleIncrement = (index: number) => {
     const updatedProducts = [...products];
@@ -108,7 +108,7 @@ export default function Cart() {
             </tr>
           </thead>
           <tbody>
-            {products.map((product, index) => (
+            {data?.cartItem?.map((product, index) => (
               <tr key={product._id}>
                 <td className="font-bold text-lg flex gap-3">
                   <Image
