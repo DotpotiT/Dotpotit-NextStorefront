@@ -3,14 +3,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      'res.cloudinary.com',
-      'images.unsplash.com',
-      'source.unsplash.com',
-      'images.pexels.com',
-      // Add more hostnames here if needed
+    remotePatterns: [
+      {
+        hostname: "images.unsplash.com",
+      },
+      {
+        hostname: "res.cloudinary.com",
+      },
+      {
+        hostname: "source.unsplash.com",
+      },
+      {
+        hostname: "images.pexels.com",
+      },
     ],
   },
+ 
 };
 
 export default nextConfig;
