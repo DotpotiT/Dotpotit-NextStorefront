@@ -16,6 +16,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("postcss-nesting"),require("daisyui")],
+  plugins: [require("daisyui")],
 };
 export default config;
