@@ -19,7 +19,7 @@ const NewArrivalsCard: React.FC<NewArrivalsCardProps> = ({ product }) => {
 
 
   return (
-    <div className="w-72 font-serif bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="w-36 md:w-56 lg:w-72 overflow-hidden font-serif bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
     <a href="#">
       <Image
         src={image}
@@ -27,21 +27,21 @@ const NewArrivalsCard: React.FC<NewArrivalsCardProps> = ({ product }) => {
         width={500}
         height={400}
       
-        className="h-80 w-72 object-cover rounded-t-xl"
+        className="w-36 h-44 md:w-56 md:h-60 lg:h-80 lg:w-72 object-cover rounded-t-xl"
       />
       <div className="px-4 py-3 w-72">
         <span className="text-gray-400 mr-3 uppercase text-xs">Brand</span>
-        <p className="text-lg font-bold text-black truncate block capitalize">
+        <p className="text-md lg:text-lg font-bold text-black truncate block capitalize">
           {name}
         </p>
         <div className="flex items-center">
-          <p className="text-lg font-semibold text-black cursor-auto my-3">
+          <p className="text-md font-semibold text-black cursor-auto my-3">
             ${price}
           </p>
           <del>
             <p className="text-sm text-gray-600 cursor-auto ml-2">$199</p>
           </del>
-          <div className="ml-auto">
+          <div className="ml-2 md:ml-16 lg:ml-auto">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
