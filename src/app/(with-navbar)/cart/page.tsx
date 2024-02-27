@@ -64,7 +64,7 @@ export default function Cart() {
 
   useEffect(() => {
     setProducts(data.cartItem);
-  }, []);
+  }, [data.cartItem]);
 
   const handleIncrement = (index: number) => {
     const updatedProducts = [...products];
