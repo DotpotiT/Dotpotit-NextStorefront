@@ -2,68 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.cart-page-heading {
-  margin-bottom: 50px;
-}
-
-.cart-page-heading h5 {
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.cart-page-heading p {
-  color: #7a7a7a;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.coupon-code-area form {
-  position: relative;
-  z-index: 1;
-}
-
-.coupon-code-area form > button {
-  width: 120px;
-  height: 52px;
-  border: none;
-  text-transform: uppercase;
-  padding: 0 30px;
-  font-size: 14px;
-  position: absolute;
-  top: 0;
-  color: #fff;
-  font-weight: 700;
-  right: 0;
-}
-
-.shipping-method-area .custom-control-label span {
-  font-size: 14px;
-}
-
-.cart-total-chart {
-  padding: 30px;
-}
-
-.cart-total-chart li {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
 
 
-/* -----------------------
-  :: 19.0 Checkout Area CSS
-  ----------------------- */
 
 .checkout_details_area div label {
   font-size: 12px;
