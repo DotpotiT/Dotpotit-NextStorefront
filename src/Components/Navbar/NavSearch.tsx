@@ -9,7 +9,7 @@ function NavSearch() {
           type="search"
           name="search"
           placeholder="Search"
-          className="bg-white h-10 px-4 w-full 
+          className="bg-white h-10 px-4 w-[170px] 
            overflow-auto lg:w-[300px]  xl:w-[400px] 2xl:w-[600px] rounded-full text-sm"
         />
         <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
