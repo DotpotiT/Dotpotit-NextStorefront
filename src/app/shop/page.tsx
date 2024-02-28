@@ -5,6 +5,7 @@ import { FaFilter } from "react-icons/fa";
 import AllProductCard from "@/Components/AllProductCard/AllProductCard";
 import Filter from "@/Components/Filter/Filter";
 import FilterDrawer from "@/Components/FilterDrawer/FilterDrawer";
+import CateGories from "@/Components/CateGories/CateGories";
 const productsData = [
   {
     _id: "1",
@@ -91,6 +92,7 @@ function Shop() {
 
   return (
     <div className="pt-24">
+      <CateGories/>
       <div className="text-sm lg:hidden">
         <input
           id="my-drawer1"
