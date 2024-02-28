@@ -28,7 +28,7 @@ function ProductDetails() {
 
   const handleColorClick = (index: number) => {
     setCurrentImageIndex(index);
-    // Set the background color based on the clicked color
+   
     switch (index) {
       case 0:
         setCarouselBackgroundColor("#000");
@@ -49,13 +49,13 @@ function ProductDetails() {
 
   return (
     <div>
-      <div className="px-2 lg:px-[265px]  pt-20  font-serif py-6 lg:py-32">
+      <div className="px-2 lg:px-[265px]  pt-16  font-serif py-6 lg:py-32">
         <section>
           <div className=" dark:bg-gray-800 py-8">
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex flex-col md:flex-row -mx-4">
                 <div className="md:flex-1 px-4">
-                  <div className="h-[130px] lg:h-[420px] rounded-lg bg-gray-300  mb-4" style={{ backgroundColor: carouselBackgroundColor }}>
+                  <div className="h-[170px] w-auto lg:h-[420px] rounded-lg bg-gray-300  mb-4" style={{ backgroundColor: carouselBackgroundColor }}>
                     <Carousel autoPlay={true} interval={3000} infiniteLoop={true} selectedItem={currentImageIndex}>
                       {productData.images.map((image, index) => (
                         <div key={index}>
@@ -81,11 +81,11 @@ function ProductDetails() {
                     ))}
                   </div>
                   <div className="flex -mx-2 mb-4">
-                    <div className="w-1/2 px-2">
-                      <button className="w-full bg-cyan-400 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to Cart</button>
+                    <div className="w-1/2 px-1">
+                      <button className="w-full bg-cyan-400 dark:bg-gray-600 text-white text-xs lg:text-lg py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to Cart</button>
                     </div>
                     <div className="w-1/2 px-2">
-                      <button className="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600">Add to Wishlist</button>
+                      <button className="w-full bg-gray-200 dark:bg-gray-700 text-xs lg:text-lg text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600">Add to Wishlist</button>
                     </div>
                   </div>
                 </div>
@@ -95,17 +95,17 @@ function ProductDetails() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt.
                   </p>
                   <div className="flex mb-4">
-                    <div className="mr-4">
-                      <span className="font-bold text-gray-700 dark:text-gray-300">Price:</span>
-                      <span className="text-gray-600 dark:text-gray-300">$29.99</span>
+                    <div className="mr-4 text-sm lg:text-lg">
+                      <span className="font-bold   text-gray-700 dark:text-gray-300">Price:</span>
+                      <span className="text-gray-600 dark:text-gray-300"> $29.99</span>
                     </div>
-                    <div>
-                      <span className="font-bold text-gray-700 dark:text-gray-300">Availability:</span>
+                    <div className="text-sm lg:text-lg">
+                      <span className="font-bold  text-gray-700 dark:text-gray-300">Availability:</span>
                       <span className="text-gray-600 dark:text-gray-300">In Stock</span>
                     </div>
                   </div>
                   <div className="mb-4">
-                    <span className="font-bold text-gray-700 dark:text-gray-300">Select Color:</span>
+                    <span className="font-bold  text-gray-700 dark:text-gray-300">Select Color:</span>
                     <div className="flex items-center mt-2">
                       <button className="w-6 h-6 rounded-full bg-gray-800 dark:bg-gray-200 mr-2" onClick={() => handleColorClick(0)}></button>
                       <button className="w-6 h-6 rounded-full bg-red-500 dark:bg-red-700 mr-2" onClick={() => handleColorClick(1)}></button>
@@ -114,7 +114,7 @@ function ProductDetails() {
                     </div>
                   </div>
                   <div className="mb-4">
-                    <span className="font-bold text-gray-700 dark:text-gray-300">Select Size:</span>
+                    <span className="font-bold  text-gray-700 dark:text-gray-300">Select Size:</span>
                     <div className="flex items-center mt-2">
                       <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">S</button>
                       <button className="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">M</button>
@@ -124,7 +124,7 @@ function ProductDetails() {
                     </div>
                   </div>
                   <div>
-                    <span className="font-bold text-gray-700 dark:text-gray-300">Product Description:</span>
+                    <span className="font-bold  text-gray-700 dark:text-gray-300">Product Description:</span>
                     <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ante justo. Integer euismod libero id mauris malesuada tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet. Duis dapibus augue vel ipsum pretium, et venenatis sem blandit. Quisque ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum lacinia, non sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi consectetur.
                     </p>
