@@ -99,7 +99,7 @@ function Shop() {
           checked={isFilterDrawerOpen}
           onChange={toggleFilterDrawer}
         />
-        <div className="pt-4 ml-2">
+        <div className="pt-8 ml-2">
           <label htmlFor="my-drawer1" className="btn">
             {isFilterDrawerOpen ? (
               ""
@@ -117,7 +117,7 @@ function Shop() {
           <div className="hidden lg:flex">
             <Filter />
           </div>
-          <div className="pt-12">
+          <div className="pt-2">
             <div className="grid grid-cols-2 mb-8 lg:grid-cols-3 justify-between gap-4">
               {currentProducts.map((product: Product) => (
                 <AllProductCard
