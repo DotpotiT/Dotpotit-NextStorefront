@@ -90,7 +90,7 @@ function Shop() {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="pt-12">
+    <div className="pt-24">
       <div className="text-sm lg:hidden">
         <input
           id="my-drawer1"
@@ -99,7 +99,7 @@ function Shop() {
           checked={isFilterDrawerOpen}
           onChange={toggleFilterDrawer}
         />
-        <div className="pt-8 ml-2">
+        <div className="pt-8  ml-2">
           <label htmlFor="my-drawer1" className="btn">
             {isFilterDrawerOpen ? (
               ""

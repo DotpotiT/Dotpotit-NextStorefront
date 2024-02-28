@@ -40,7 +40,7 @@ const Filter: React.FC<FilterProps> = () => {
  
   
     return (
-      <div className=" lg:pt-16 w-[35vh]  lg:w-[35vh]    px-2 lg:px-8 py-5">
+      <div className=" lg:pt-8 w-[35vh]  lg:w-[35vh]    px-2 lg:px-8 py-5">
         <div className="flex flex-col">
           <h6 className="text-md lg:text-lg mb-6">Categories</h6>
   

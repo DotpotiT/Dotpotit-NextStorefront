@@ -106,7 +106,7 @@ function CheckOut(props: any) {
   };
 
   return (
-    <div className="px-2 lg:px-[420px] py-6 lg:py-32">
+    <div className="px-2 lg:px-[420px] py-6 pt-32">
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col lg:flex-row justify-between gap-2 lg:gap-5">
           <div className="flex flex-col w-full">
