@@ -33,11 +33,28 @@ function Navbar() {
             <NavCategory />
           </div>
         </div>
-        <div className="text-sm lg:hidden overflow-hidden ">
-          <button className="btn rounded-full btn-info" onClick={toggleDrawer}>
-            {isDrawerOpen ? <IoClose className="text-3xl" /> : <RiMenuUnfoldFill className="text-2xl" />}
-          </button>
-          {isDrawerOpen && <Drawer onClose={toggleDrawer} />} 
+        
+        <div className=" text-sm lg:hidden overflow-hidden">
+          <input
+            id="my-drawer"
+            type="checkbox"
+            className="drawer-toggle"
+            checked={isDrawerOpen}
+            onChange={toggleDrawer}
+          />
+          <div className=" ">
+            <label
+              htmlFor="my-drawer"
+              className="btn rounded-full btn-info "
+            >
+              {isDrawerOpen ? (
+                <IoClose className="text-3xl" />
+              ) : (
+                <RiMenuUnfoldFill className="text-2xl" />
+              )}
+            </label>
+          </div>
+          {isDrawerOpen && <Drawer onClose={toggleDrawer} />}
         </div>
         <NavSearch />
         <div className="navbar-end hidden lg:flex justify-between lg:flex-row">
