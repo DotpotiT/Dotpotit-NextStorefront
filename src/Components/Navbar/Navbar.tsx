@@ -33,7 +33,7 @@ function Navbar() {
             <NavCategory />
           </div>
         </div>
-        <div className="text-sm lg:hidden overflow-hidden">
+        <div className="text-sm lg:hidden overflow-hidden ">
           <button className="btn rounded-full btn-info" onClick={toggleDrawer}>
             {isDrawerOpen ? <IoClose className="text-3xl" /> : <RiMenuUnfoldFill className="text-2xl" />}
           </button>
@@ -43,7 +43,7 @@ function Navbar() {
         <div className="navbar-end hidden lg:flex justify-between lg:flex-row">
           <NavCart />
         </div>
-        <button className="btn btn-info btn-outline uppercase font-extrabold">
+        <button className="btn btn-info  text-white uppercase font-extrabold">
           <Link href="/login">LogIn</Link>
         </button>
       </div>
