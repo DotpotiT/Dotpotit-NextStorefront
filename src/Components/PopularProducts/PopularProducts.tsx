@@ -19,6 +19,9 @@ const PopularProducts: React.FC = () => {
         { id: 1, name: "Product" },
         { id: 2, name: "Product" },
         { id: 3, name: "Product" },
+        { id: 4, name: "Product" },
+        { id: 5, name: "Product" },
+        { id: 6, name: "Product" },
       ];
       setProducts(dummyProducts);
     } catch (error) {
@@ -74,9 +77,9 @@ const PopularProducts: React.FC = () => {
         <div>
           {products.length > 3 && (
             <Link href="/flashSalePage">
-              <a className="mt-4 bg-[#009DE4] text-white px-2 text-sm lg:text-lg py-1 lg:py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800" onClick={toggleShowMore}>
+              <button className="mt-4 bg-[#009DE4] text-white px-2 text-sm lg:text-lg py-1 lg:py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800" onClick={toggleShowMore}>
                 {/* {showAll ? <Shop/> : 'See More'} */}
-              </a>
+              </button>
             </Link>
           )}
         </div>

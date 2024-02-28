@@ -11,7 +11,7 @@ interface AllProductCardProps {
   
 const AllProductCard: React.FC<AllProductCardProps> = ({ id, discount, price, name, image }) => {
   return (
-    <div className="card  font-serif bg-base-100 shadow-xl overflow-hidden">
+    <div className="card font-serif bg-base-100 shadow-xl overflow-hidden">
       <figure>
       
         <Image
@@ -19,17 +19,18 @@ const AllProductCard: React.FC<AllProductCardProps> = ({ id, discount, price, na
           alt="Shoes"
           width={500}
           height={300}
+          className=''
         />
       </figure>
-      <div className="card-body">
+      <div className="p-4 ">
         <h3 className="card-title text-sm md:text-md lg:text-lg">
          {name}
           <div className="badge badge-secondary hidden lg:block">NEW</div>
         </h3>
-        <p className='text-xs md:text-sm lg:text-lg '>$ 234 </p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline text-md">Fashion</div> 
-          <div className="badge badge-outline text-md">Products</div>
+        <p className='text-xs md:text-sm lg:text-lg mb-2 '>$ 234 </p>
+        <div className=" flex flex-row justify-between ">
+          <div className="badge badge-outline text-xs lg:text-lg">Fashion</div> 
+          <div className="badge badge-outline text-xs lg:text-lg">Products</div>
         </div>
       </div>
     </div>
