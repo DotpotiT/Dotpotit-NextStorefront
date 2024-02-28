@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 import { RiDeleteBin7Line } from "react-icons/ri";
 import { LuArrowRightCircle } from "react-icons/lu";
-import Image from "next/image";
 
 interface Product {
   _id: string;
@@ -18,6 +18,7 @@ interface Product {
 export default function Cart() {
   const [products, setProducts] = useState<Product[]>([]);
   const [deliveryCost, setDeliveryCost] = useState<number>(0);
+
   const data = {
     cartItem: [
       {
@@ -62,23 +63,10 @@ export default function Cart() {
     ],
   };
 
-  // useEffect(() => {
-  //   setProducts(data.cartItem);
-  // });
-
-  const handleIncrement = (index: number) => {
-    const updatedProducts = [...products];
-    updatedProducts[index].quantity += 1;
-    setProducts(updatedProducts);
-  };
-
-  const handleDecrement = (index: number) => {
-    const updatedProducts = [...products];
-    if (updatedProducts[index].quantity > 1) {
-      updatedProducts[index].quantity -= 1;
-      setProducts(updatedProducts);
-    }
-  };
+  // Set initial state with data
+  useState(() => {
+    setProducts(data.cartItem);
+  }, []);
 
   const handleDeleteProduct = (id: string) => {
     const updatedProducts = products.filter((product) => product._id !== id);
@@ -86,87 +74,74 @@ export default function Cart() {
   };
 
   const calculateTotalAmount = () => {
-    let totalAmount = 0;
-    products.forEach((product) => {
-      totalAmount += product.product.price * product.quantity;
-    });
+    let totalAmount = products.reduce(
+      (accumulator, product) =>
+        accumulator + product.product.price * product.quantity,
+      0
+    );
     totalAmount += parseFloat(deliveryCost.toString());
     return totalAmount.toFixed(2);
   };
 
   return (
-    <div className="px-2 md:px-[20px] lg:px-[220px] xl:px-[230px] 2xl:px-[300px] py-16 lg:py-24">
-      <div className="overflow-x-auto">
-        <table className="table">
-          <thead>
-            <tr>
-              <th className="font-bold text-lg">Product</th>
-              <th className="font-bold text-lg">Price</th>
-              <th className="font-bold text-lg">Discounted Price</th>
-              <th className="font-bold text-lg">Quantity</th>
-              <th className="font-bold text-lg">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data?.cartItem?.map((product, index) => (
-              <tr key={product._id}>
-                <td className="font-bold text-lg flex gap-3">
+    <div className="px-2 md:px-[20px] font-serif lg:px-[220px] xl:px-[230px] 2xl:px-[300px] py-16 lg:py-24">
+       <h2 className="text-4xl font-semibold py-7">Shopping Cart</h2>
+      <div className=" flex flex-row justify-evenly gap-12">
+      <div className="flow-root w-full">
+          <ul role="list" className="-my-6 divide-y divide-gray-200">
+            {products.map((product) => (
+              <li key={product._id} className="flex py-6">
+                <div className="h-36 w-36 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                   <Image
-                    className="w-20 h-20"
-                    width={100} // Set the width of the image (adjust as needed)
+                    className="h-full w-full object-cover object-center"
+                    width={100}
                     height={100}
                     src={product.product.images[0]}
                     alt=""
                   />
-                  {product.product.name}
-                </td>
-                <td className="font-bold text-lg">{product.product.price}</td>
-                <td className="font-bold text-lg">
-                  {product.product.discountedPrice}
-                </td>
-                <td className="font-bold text-lg">
-                  <div className="flex flex-row items-center gap-4">
-                    <span
-                      className="text-xl font-medium cursor-pointer"
-                      onClick={() => handleDecrement(index)}
-                    >
-                      -
-                    </span>
-                    <span>{product.quantity}</span>
-                    <span
-                      className="text-xl font-medium cursor-pointer"
-                      onClick={() => handleIncrement(index)}
-                    >
-                      +
-                    </span>
-                  </div>
-                </td>
-                <td>
-                  <button
-                    className="text-gray-600 px-2 py-1 rounded-md text-2xl"
-                    onClick={() => handleDeleteProduct(product._id)}
-                  >
-                    <RiDeleteBin7Line />
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+                </div>
 
-      <div className="flex flex-col-reverse lg:flex-row justify-between mt-2">
+                <div className="ml-4 flex flex-1 flex-col">
+                  <div>
+                    <div className="flex justify-between text-base font-medium text-gray-900">
+                      <h3>{product.product.name}</h3>
+                      <p className="ml-4">${product.product.price}</p>
+                    </div>
+                    {/* Assuming the color is always blue */}
+                    <p className="mt-1 text-sm text-gray-500">Blue</p>
+                  </div>
+                  <div className="flex flex-1 items-end justify-between text-sm">
+                    <p className="text-gray-500">Qty {product.quantity}</p>
+
+                    <div className="flex">
+                      <button
+                        type="button"
+                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                        onClick={() => handleDeleteProduct(product._id)}
+                      >
+                        <RiDeleteBin7Line />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+  
+
+      <div className="flex flex-col w-1/2  mt-2">
         <div className="cart-total-area">
           <ul className="cart-total-chart border p-2 border-cyan-300">
             <li className="flex flex-row justify-between gap-16 lg:gap-32">
-              <span>Subtotal</span> <span>৳{calculateTotalAmount()}</span>
+              <span>Subtotal</span> <span>${calculateTotalAmount()}</span>
             </li>
             <li className="flex flex-row justify-between gap-16 lg:gap-32">
               <span>
                 <strong>Total</strong>
               </span>{" "}
               <span>
-                <strong>৳{calculateTotalAmount()}</strong>
+                <strong>${calculateTotalAmount()}</strong>
               </span>
             </li>
           </ul>
@@ -175,6 +150,7 @@ export default function Cart() {
         <a href="/shop" className="btn-info btn my-5 text-white flex gap-2">
           Continue shopping <LuArrowRightCircle className="text-2xl" />
         </a>
+      </div>
       </div>
     </div>
   );
