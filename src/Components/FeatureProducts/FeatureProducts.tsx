@@ -89,7 +89,7 @@ const FeatureProducts: React.FC = () => {
         <Slider {...settings}>
           {products.map((product) => (
             <div key={product.id} className="slick-slide">
-              <div style={{ padding: "0 15px" }}>
+              <div style={{ padding: "0 5px" }}>
               <AllProductCard
   key={product.id}
   id={product.id}

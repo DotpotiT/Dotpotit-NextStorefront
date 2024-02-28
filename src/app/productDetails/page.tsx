@@ -59,7 +59,7 @@ function ProductDetails() {
 
   return (
     <div>
-      <div className="px-2 lg:px-[320px] font-serif py-6 lg:py-32">
+      <div className="px-2 lg:px-[265px]  pt-20  font-serif py-6 lg:py-32">
         <section>
           <div className="flex flex-col">
             <div className="flex flex-col lg:flex-row  justify-between gap-5">
