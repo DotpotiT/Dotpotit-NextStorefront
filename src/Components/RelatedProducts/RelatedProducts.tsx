@@ -8,7 +8,8 @@ import AllProductCard from "../AllProductCard/AllProductCard";
 
 interface Product {
   imageSrc: string;
-  price: number;  description: string;
+  price: number;  
+  description: string;
 }
 
 function RelatedProducts() {
@@ -24,7 +25,8 @@ function RelatedProducts() {
   };
 
   const products: Product[] = [
-    // Add your product data here
+
+
     {
       imageSrc:
         "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-1_ucqfqi.jpg",
@@ -37,7 +39,19 @@ function RelatedProducts() {
       price: 39.90,
       description: "Jeans midi cocktail dress",
     },
-    // Add more products as needed
+    {
+      imageSrc:
+        "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
+      price: 39.90,
+      description: "Jeans midi cocktail dress",
+    },
+    {
+      imageSrc:
+        "https://res.cloudinary.com/dzqxgr4lr/image/upload/v1706181849/product-2_im20vg.jpg",
+      price: 39.90,
+      description: "Jeans midi cocktail dress",
+    },
+
   ];
 
   return (
@@ -45,16 +59,23 @@ function RelatedProducts() {
       <h1 className="text-center text-2xl py-6">Related Products</h1>
       <Slider {...settings}>
         {products.map((product, index) => (
-          <AllProductCard
-            key={index}
-            id={index.toString()} // Provide a unique ID for each product
-            discount={0} // Placeholder value if not available
-            price={product.price} // Pass the product price
-            name={product.description} // Pass the product description as the name
-            image={product.imageSrc} // Pass the product image source
-          />
+          <div key={index} className="product-card-wrapper">
+            <AllProductCard
+              id={index.toString()} // Provide a unique ID for each product
+              discount={0} // Placeholder value if not available
+              price={product.price} // Pass the product price
+              name={product.description} // Pass the product description as the name
+              image={product.imageSrc} // Pass the product image source
+            />
+          </div>
         ))}
       </Slider>
+
+      <style jsx>{`
+        .product-card-wrapper {
+          margin: 0 10px; // Adjust the margin as per your requirement
+        }
+      `}</style>
     </div>
   );
 }
