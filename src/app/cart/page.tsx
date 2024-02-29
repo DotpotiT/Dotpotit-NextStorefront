@@ -64,9 +64,9 @@ export default function Cart() {
   };
 
   // Set initial state with data
-  useState(() => {
-    setProducts(data.cartItem);
-  }, []);
+  // useState(() => {
+  //   setProducts(data.cartItem);
+  // });
 
   const handleDeleteProduct = (id: string) => {
     const updatedProducts = products.filter((product) => product._id !== id);
@@ -89,7 +89,7 @@ export default function Cart() {
       <div className=" flex flex-row justify-evenly gap-12">
       <div className="flow-root w-full">
           <ul role="list" className="-my-6 divide-y divide-gray-200">
-            {products.map((product) => (
+            {data?.cartItem?.map((product) => (
               <li key={product._id} className="flex py-6">
                 <div className="h-36 w-36 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                   <Image
@@ -107,7 +107,7 @@ export default function Cart() {
                       <h3>{product.product.name}</h3>
                       <p className="ml-4">${product.product.price}</p>
                     </div>
-                    {/* Assuming the color is always blue */}
+                   
                     <p className="mt-1 text-sm text-gray-500">Blue</p>
                   </div>
                   <div className="flex flex-1 items-end justify-between text-sm">
